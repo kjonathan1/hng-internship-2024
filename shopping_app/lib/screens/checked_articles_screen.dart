@@ -3,8 +3,10 @@ import "package:shopping_app/widgets/article_widget.dart";
 
 class CheckedArticlesScreen extends StatelessWidget {
   final List<Map<String, dynamic>> articles;
+  final VoidCallback resetArticles;
 
-  const CheckedArticlesScreen({super.key, required this.articles});
+  const CheckedArticlesScreen(
+      {super.key, required this.articles, required this.resetArticles});
 
   @override
   Widget build(BuildContext context) {
@@ -30,6 +32,12 @@ class CheckedArticlesScreen extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.all(10.0),
           child: ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              minimumSize: const Size(
+                  double.infinity, 60), // Full width and height of 60
+              padding: const EdgeInsets.symmetric(vertical: 20),
+              textStyle: const TextStyle(fontSize: 18),
+            ),
             onPressed: () {
               ScaffoldMessenger.of(context).showSnackBar(
                 const SnackBar(
@@ -37,6 +45,8 @@ class CheckedArticlesScreen extends StatelessWidget {
                   backgroundColor: Colors.green,
                 ),
               );
+
+              resetArticles();
             },
             child: const Text('Pay'),
           ),

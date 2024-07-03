@@ -32,7 +32,7 @@ class _ArticleWidgetState extends State<ArticleWidget> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           widget.imageUrl != null
-              ? Image.network(widget.imageUrl!,
+              ? Image.asset("assets/${widget.imageUrl!}",
                   fit: BoxFit.cover, width: double.infinity, height: 150)
               : Container(
                   height: 150,

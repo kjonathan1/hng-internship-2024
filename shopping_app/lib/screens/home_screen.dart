@@ -15,59 +15,79 @@ class _HomePageState extends State<HomePage> {
   List<Map<String, dynamic>> articles = [
     {
       'id': '1',
-      'name': 'Tower',
+      'name': 'Towel',
       'price': 20,
       'isChecked': false,
+      'imageUrl': "towel.png",
     },
     {
       'id': '2',
       'name': 'Car',
       'price': 200,
       'isChecked': false,
+      'imageUrl': "car.png",
     },
     {
       'id': '3',
-      'name': 'Snaks',
+      'name': 'Snacks',
       'price': 2,
       'isChecked': false,
+      'imageUrl': "snacks.png",
     },
     {
       'id': '4',
       'name': 'Soda',
       'price': 5,
       'isChecked': false,
+      'imageUrl': "soda.png",
     },
     {
       'id': '5',
       'name': 'Watch',
       'price': 70,
       'isChecked': false,
+      'imageUrl': "watch.png",
     },
     {
       'id': '6',
       'name': 'Laptop',
       'price': 150,
       'isChecked': false,
+      'imageUrl': "laptop.png",
     },
     {
       'id': '7',
       'name': 'Bike',
       'price': 175,
       'isChecked': false,
+      'imageUrl': "bike.png",
     },
     {
       'id': '8',
       'name': 'Phone',
       'price': 50,
       'isChecked': false,
+      'imageUrl': "phone.png",
     },
     {
       'id': '9',
       'name': 'Glaces',
       'price': 10,
       'isChecked': false,
+      'imageUrl': "glace.png",
     },
   ];
+
+  void resetArticles() {
+    Future.delayed(const Duration(seconds: 4), () {
+      setState(() {
+        for (var article in articles) {
+          article['isChecked'] = false;
+        }
+        pageIndex = 0; // Navigate back to the home page
+      });
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -86,6 +106,7 @@ class _HomePageState extends State<HomePage> {
       CheckedArticlesScreen(
         articles:
             articles.where((article) => article['isChecked'] == true).toList(),
+        resetArticles: resetArticles,
       ),
     ];
     return Scaffold(
