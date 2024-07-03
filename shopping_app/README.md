@@ -1,32 +1,17 @@
 # shopping_app
 
-A new Flutter project.
-
-## Getting Started
-
-https://hng11.slack.com/archives/C078K58E1B9/p1719741603524119
+This is a simple shopping app  that is showing a list of products/items (statically) in a shop and a checkout screen.
 
 
-Mobile Interns
-Stage One Task - Mobile Track
-Task: Simple Shopping App
+## How it's work
+![screen1](https://github.com/kjonathan1/hng-internship-2024/assets/40925283/adba83c4-dcdb-4ecf-8702-793d035b1502)
+![screen2](https://github.com/kjonathan1/hng-internship-2024/assets/40925283/c9b3ca29-fecd-459f-bfa0-6a0bf5571ce7)
+![screen3](https://github.com/kjonathan1/hng-internship-2024/assets/40925283/f8c792b3-eb77-43fb-a93e-684d3411b054)
+![screen4](https://github.com/kjonathan1/hng-internship-2024/assets/40925283/cb7d1209-173a-424c-9672-cf4a967c6f3d)
 
-Objectives: Create a simple shopping app that is showing a list of products/items (statically) in a shop and a checkout screen.
-
-Requirements:
-A bottom navigation bar consisting of Products and Checkout items.
-Products will displays the list of products/items, Checkout will display the products added for checkout.
-Have the functionality of adding and removing items to the Checkout .
-A button that navigates to an Order Successful screen from the Checkout screen.
-Acceptance Criteria:
+## Quick Demo
+![demo](https://github.com/kjonathan1/hng-internship-2024/assets/40925283/d5aed4b8-f7b0-4795-9129-56df690b1d77)
 
 
-No Third-party Dependencies: Ensure that the application is built without importing any third-party packages, plugins, or libraries. Utilize only native functionalities and components of your chosen mobile platform/framework.
-Intuitive and Adaptive UI: The application should have a user-friendly and intuitive user interface, with clear labelling and easy navigation and spacing.
-Proper README File: it should contain proper setup instructions, app screenshots, apk download link e.t.c.
-Submission Requirements:
-GitHub Repository: Host your application's source code on your GitHub repository.
-Appetize.io Showcase: Use Appetize.io to provide a virtualized demonstration of the release version of your app and ensure it doesn't crash when launching the app.
-Deadline: Tuesday, 4th July - 11:59pm WAT
-Reward: Promotion to Stage 2
-Submission: Mobile Track Stage One Submission Here (edited) 
+## Download APK file
+https://github.com/kjonathan1/hng-internship-2024/blob/main/shopping_app/app-release.apk
