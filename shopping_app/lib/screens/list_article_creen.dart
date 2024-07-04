@@ -17,10 +17,10 @@ class _ListArticleScreenState extends State<ListArticleScreen> {
   Widget build(BuildContext context) {
     return GridView.count(
       crossAxisCount: 2,
-      mainAxisSpacing: 10.0,
-      crossAxisSpacing: 10.0,
+      mainAxisSpacing: 5.0,
+      crossAxisSpacing: 5.0,
       childAspectRatio: 0.75,
-      padding: const EdgeInsets.all(20),
+      padding: const EdgeInsets.all(10.0),
       children: [
         for (var article in widget.articles)
           ArticleWidget(

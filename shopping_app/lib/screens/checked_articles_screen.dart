@@ -14,7 +14,7 @@ class CheckedArticlesScreen extends StatelessWidget {
       children: [
         Expanded(
           child: ListView.builder(
-            padding: const EdgeInsets.all(10),
+            padding: const EdgeInsets.all(10.0),
             itemCount: articles.length,
             itemBuilder: (context, index) {
               final article = articles[index];
@@ -34,9 +34,9 @@ class CheckedArticlesScreen extends StatelessWidget {
           child: ElevatedButton(
             style: ElevatedButton.styleFrom(
               minimumSize: const Size(
-                  double.infinity, 60), // Full width and height of 60
-              padding: const EdgeInsets.symmetric(vertical: 20),
-              textStyle: const TextStyle(fontSize: 18),
+                  double.infinity, 60.0), // Full width and height of 60
+              padding: const EdgeInsets.symmetric(vertical: 20.0),
+              textStyle: const TextStyle(fontSize: 18.0),
             ),
             onPressed: () {
               ScaffoldMessenger.of(context).showSnackBar(
